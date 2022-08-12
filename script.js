@@ -1,3 +1,5 @@
+// Logic of Calculator app :-
+
 let string = "";
 let buttons = document.querySelectorAll('.button');
 Array.from(buttons).forEach((button) => {
@@ -21,6 +23,7 @@ Array.from(buttons).forEach((button) => {
         }
 
 
+        // Another operator will coming soon :-
         // else if (e.target.innerHTML == '+/-'){
         //     let num = string.lastIndexOf("+");
         //     let lol = string.split("")
@@ -37,29 +40,4 @@ Array.from(buttons).forEach((button) => {
         }
     })
 })
-
-
-
-
-// Styling :
-    
-// document.querySelector('*').style.textAlign="center";
-
-// let mystyle = [
-//     ["textAlign","center"],
-//     ["backgroundColor","red"],
-//     ["fontSize","50px"]
-// ]
-// mystyle.forEach(e =>
-// document.querySelector('*').style[e[0]] = e[1])
-
-// let hero = document.querySelector('*').style
-
-let mystyle = s => document.querySelector(s).style
-
-mystyle("*").textAlign="center";
-mystyle("*").backgroundColor="#5ebc52";
-
-
-
 

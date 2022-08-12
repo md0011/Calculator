@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+body {
+    background-color: aquamarine;
+}
+
+#container{
+    border: 10px green;
+    background-color: lightgoldenrodyellow;
+    border-style: inset;
+    width: 23%;
+    margin-left: 38%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+    box-shadow: 10px 10px 20px rgb(96, 95, 95);
+}
+
+h1{
+    width: 22%;
+    margin-left: 38%;
+    text-align: center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    letter-spacing: 3px;
+    font-size: 4em;
+    color: transparent;
+    cursor: pointer;
+    transition: .2s;
+    animation: heading 2s linear infinite;
+}
+
+@keyframes heading {
+    0% {
+        background: linear-gradient(
+            #008000, #00FF00);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+            #3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+}
+
+h1:hover{
+    transform: scaleX(2);
+}
+
+.row {
+    margin: 10px 0;
+}
+
+.row input {
+    width: 275px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    border: 10px groove aqua;
+    background-color: lightgreen;
+    cursor: context-menu;
+    text-align: end;
+}
+
+.button {
+    width: 60px;
+    padding: 15px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 0 5px black;
+    transition: .2s;
+}
+
+.button:hover{
+    transform: scale(0.9);
+    box-shadow: none;
+    background-color: tomato;
+}
+
+
+@media (max-width:1300px){
+    h1{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 70px;
+        width: 100%;
+    }
+    h1:hover{
+        transform: none;
+    }
+    #container{
+        width: 350px;
+        margin: auto;
+        padding: 45px 0px;
+    }
+    .row input{
+        margin-bottom: 30px;
+    }
+}
